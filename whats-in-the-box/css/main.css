@@ -1,8 +1,7 @@
-#main {
-  padding: 100px;
+[v-cloak] {
+  display: none;
 }
 
-#main > h1, #main > div {
-  text-align: center;
-  margin-bottom: 40px;
+#main .row {
+  margin-top: 40px;
 }

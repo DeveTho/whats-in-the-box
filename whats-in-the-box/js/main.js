@@ -1,8 +1,13 @@
-(function ($) {
-  $(function () {
-    $('#open-button').click(function () {
-      $(this).prop('disabled', true).text('Opening...');
-      $('#box-image').attr('src', 'img/open.gif?v=0');
-    });
+(function () {
+  new Vue({
+    el: '#main',
+    data: {
+      isOpen: false
+    },
+    methods: {
+      openBox: function () {
+        this.isOpen = true;
+      }
+    }
   });
-})(jQuery);
+})(Vue);
